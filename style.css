@@ -1,0 +1,59 @@
+body{
+    font-family: Arial;
+}
+h2{
+    text-align: center;
+}
+h5{
+    margin: 0px;
+    padding: 5px 25px;
+    display: inline-block;
+    float: right;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+p{
+    padding: 15px 15px;
+    margin: 0px;
+    clear: both;
+}
+.div1, .div2, .div3{
+    float: left;
+    margin: 15px;
+    border: 1px solid black;
+}
+.div1 h5{
+    background-color: lightcoral;
+}
+.div2 h5{
+    background-color: brown;
+    color: white;
+}
+.div3 h5{
+    background-color: palegoldenrod;
+}
+
+/* Desktop Version ----------- */
+@media screen and (min-width : 992px) {
+    .div1, .div2, .div3{
+        width: 30%;
+    }
+}
+
+/* Tablet Version ----------- */
+@media screen and (min-width : 768px) and (max-width : 991px) {
+    .div1, .div2 {
+        width: 45%;
+    }
+    .div3{
+        width: 94%;
+    }
+}
+
+/* Mobile Version ----------- */
+@media screen and (max-width : 767px) {
+    .div1, .div2, .div3 {
+        width: 94%;
+    }
+}
+
